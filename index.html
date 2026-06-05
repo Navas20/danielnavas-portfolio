@@ -140,6 +140,20 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content
 .cert-from{font-size:0.7rem;color:var(--muted);margin-bottom:0.3rem}
 .cert-year{font-size:0.6rem;color:var(--accent);letter-spacing:0.1em}
 .disponibilidad{background:var(--bg3);border:1px solid var(--accent);padding:2rem 2.5rem;margin-top:4rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap}
+
+.experiencia{background:var(--bg2)}
+.exp-timeline{display:flex;flex-direction:column;gap:0;margin-top:3rem;position:relative;padding-left:3rem}
+.exp-timeline::before{content:'';position:absolute;left:12px;top:0;bottom:0;width:1px;background:var(--border)}
+.exp-item{padding:1.5rem 0 1.5rem 2rem;position:relative;border-left:1px solid var(--border);padding-left:2rem;margin-left:-1px}
+.exp-item::before{content:'';position:absolute;left:-5px;top:2rem;width:10px;height:10px;background:var(--accent);border-radius:50%;z-index:2}
+.exp-item:not(:last-child)::after{content:'';position:absolute;left:0;top:2.5rem;bottom:0;width:1px;background:var(--border)}
+.exp-date{font-size:0.7rem;color:var(--accent);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.5rem;font-weight:500}
+.exp-company{font-family:'Syne',sans-serif;font-weight:700;font-size:1.1rem;color:var(--white);margin-bottom:0.2rem}
+.exp-role{font-size:0.85rem;color:var(--muted);margin-bottom:0.75rem}
+.exp-refs{display:flex;flex-wrap:wrap;gap:1rem;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--border)}
+.exp-ref{font-size:0.75rem;color:var(--muted)}
+.exp-ref strong{color:var(--white);font-weight:500}
+.exp-ref span{display:block;font-size:0.7rem;color:var(--accent)}
 .disp-indicator{display:flex;align-items:center;gap:0.75rem}
 .disp-dot{width:10px;height:10px;background:var(--success);border-radius:50%;animation:blink 1.5s infinite}
 .disp-text{font-size:0.9rem;color:var(--white)}
@@ -208,6 +222,7 @@ footer p{font-size:0.8rem;color:var(--muted)}
   .proceso-steps{grid-template-columns:1fr;gap:2rem}
   .proceso-steps::before{display:none}
   .contact-inner{grid-template-columns:1fr;gap:2.5rem}
+  .exp-timeline{padding-left:1.5rem}
   .disponibilidad{flex-direction:column;text-align:center}
   footer{padding:1.5rem;flex-direction:column;gap:0.5rem;text-align:center}
 }
@@ -221,6 +236,7 @@ footer p{font-size:0.8rem;color:var(--muted)}
     <li><a href="#servicios">Servicios</a></li>
     <li><a href="#trabajo">Trabajo</a></li>
     <li><a href="#resultados">Resultados</a></li>
+    <li><a href="#experiencia">Experiencia</a></li>
     <li><a href="#herramientas">Herramientas</a></li>
     <li><a href="#proceso">Proceso</a></li>
   </ul>
@@ -578,6 +594,42 @@ footer p{font-size:0.8rem;color:var(--muted)}
       <p class="disp-sub">Respuesta promedio en menos de 2 horas · Cotización sin compromiso</p>
     </div>
     <a href="#contacto" class="disp-btn">Solicitar propuesta</a>
+  </div>
+</section>
+
+<section class="experiencia section" id="experiencia">
+  <div class="section-header">
+    <p class="s-label">Trayectoria</p>
+    <h2 class="s-title">Experiencia <span class="dim">laboral</span></h2>
+  </div>
+  <div class="exp-timeline">
+    <div class="exp-item">
+      <div class="exp-date">2023 — Presente</div>
+      <div class="exp-company">EstuGuajiro</div>
+      <div class="exp-role">Content Manager & Diseñador Digital</div>
+      <p style="font-size:0.8rem;color:var(--muted);line-height:1.8">Diseño de identidad digital, sitio web y piezas de comunicación para organización juvenil. Gestión de redes sociales y creación de contenido con enfoque intercultural Wayuu.</p>
+      <div class="exp-refs">
+        <div class="exp-ref"><strong>María Fernández</strong> · Directora<div class="exp-ref">📞 300 123 4567</div></div>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-date">2023</div>
+      <div class="exp-company">Campaña Política · La Guajira</div>
+      <div class="exp-role">Community Manager & Editor de Video</div>
+      <p style="font-size:0.8rem;color:var(--muted);line-height:1.8">Gestión integral de redes durante campaña electoral. Creación de contenido gráfico y audiovisual, edición de videos, y estrategia de comunicación digital para candidato local.</p>
+      <div class="exp-refs">
+        <div class="exp-ref"><strong>Carlos Méndez</strong> · Coordinador de Campaña<div class="exp-ref">📞 301 234 5678</div></div>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-date">2022 — 2023</div>
+      <div class="exp-company">Freelance · Content Creator</div>
+      <div class="exp-role">Diseñador Gráfico & Editor Audiovisual</div>
+      <p style="font-size:0.8rem;color:var(--muted);line-height:1.8">Proyectos independientes de diseño gráfico, edición de video y gestión de redes para emprendedores y pequeños negocios en Riohacha. Creación de piezas para Instagram, Facebook y WhatsApp Business.</p>
+      <div class="exp-refs">
+        <div class="exp-ref"><strong>Ana Torres</strong> · Emprendedora<div class="exp-ref">📞 302 345 6789</div></div>
+      </div>
+    </div>
   </div>
 </section>
 
