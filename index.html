@@ -141,6 +141,20 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content
 .cert-year{font-size:0.6rem;color:var(--accent);letter-spacing:0.1em}
 .disponibilidad{background:var(--bg3);border:1px solid var(--accent);padding:2rem 2.5rem;margin-top:4rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap}
 
+.experiencia{background:var(--bg2)}
+.exp-timeline{display:flex;flex-direction:column;gap:0;margin-top:3rem;position:relative;padding-left:3rem}
+.exp-timeline::before{content:'';position:absolute;left:12px;top:0;bottom:0;width:1px;background:var(--border)}
+.exp-item{padding:1.5rem 0 1.5rem 2rem;position:relative;border-left:1px solid var(--border);padding-left:2rem;margin-left:-1px}
+.exp-item::before{content:'';position:absolute;left:-5px;top:2rem;width:10px;height:10px;background:var(--accent);border-radius:50%;z-index:2}
+.exp-item:not(:last-child)::after{content:'';position:absolute;left:0;top:2.5rem;bottom:0;width:1px;background:var(--border)}
+.exp-date{font-size:0.7rem;color:var(--accent);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.5rem;font-weight:500}
+.exp-company{font-family:'Syne',sans-serif;font-weight:700;font-size:1.1rem;color:var(--white);margin-bottom:0.2rem}
+.exp-role{font-size:0.85rem;color:var(--muted);margin-bottom:0.75rem}
+.exp-refs{display:flex;flex-wrap:wrap;gap:1rem;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--border)}
+.exp-ref{font-size:0.75rem;color:var(--muted)}
+.exp-ref strong{color:var(--white);font-weight:500}
+.exp-ref span{display:block;font-size:0.7rem;color:var(--accent)}
+
 .ref-section{background:var(--bg)}
 .ref-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
 .ref-card{background:var(--bg2);border:1px solid var(--border);padding:1.5rem;transition:border-color 0.2s}
@@ -218,6 +232,7 @@ footer p{font-size:0.8rem;color:var(--muted)}
   .proceso-steps{grid-template-columns:1fr;gap:2rem}
   .proceso-steps::before{display:none}
   .contact-inner{grid-template-columns:1fr;gap:2.5rem}
+  .exp-timeline{padding-left:1.5rem}
   .ref-grid{grid-template-columns:1fr}
   .disponibilidad{flex-direction:column;text-align:center}
   footer{padding:1.5rem;flex-direction:column;gap:0.5rem;text-align:center}
@@ -232,6 +247,8 @@ footer p{font-size:0.8rem;color:var(--muted)}
     <li><a href="#servicios">Servicios</a></li>
     <li><a href="#trabajo">Trabajo</a></li>
     <li><a href="#resultados">Resultados</a></li>
+    <li><a href="#experiencia">Experiencia</a></li>
+    <li><a href="#referencias">Referencias</a></li>
     <li><a href="#herramientas">Herramientas</a></li>
     <li><a href="#proceso">Proceso</a></li>
   </ul>
